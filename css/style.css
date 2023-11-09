@@ -61,7 +61,7 @@ section{
 background-color: #fff;
 }
 
-section p{
+section article{
 max-width: 40%;
 margin-left: auto;
 margin-right: auto;
@@ -71,7 +71,7 @@ font-size: 19px;
 padding-bottom: 16px;
 }
 
-section p a{
+section article a{
 text-decoration: none;
 color: dimgrey;
 }
@@ -236,7 +236,7 @@ color: #3a3a3a;
 }
 
 
-/* FOOTER CSS */
+/* Footer CSS */
 
 footer{
 height: 100px;
@@ -254,6 +254,8 @@ line-height: 100px;
 background-color: rgba(0,0,0,0.8);
 }
 
+/* Grid CSS */
+
 .aboutmegrid {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -267,7 +269,7 @@ grid-row-gap: 0px;
 
 .grid-container {
 display: grid;
-grid-template-columns: 50% 40%;
+grid-template-columns: 50% 50%;
 /* background-color: #2196F3; */
 /* padding: 10px; */
 }
@@ -283,7 +285,17 @@ padding: 10px;
 .grid-item {
 /* background-color: rgba(255, 255, 255, 0.8); */
 /* border: 1px solid rgba(0, 0, 0, 0.8); */
-/* padding: 20px; */
+padding: 20px;
 font-size: 30px;
 /* text-align: center; */
+}
+
+.aboutme {
+    max-width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 16px;
+    font-family: Calibri, sans-serif;
+    font-size: 19px;
+    padding-bottom: 16px;
 }
