@@ -51,22 +51,27 @@
         </div>
         <section style="padding-top: 30px; padding-bottom: 30px;">				
 				<article>
-                    <p><b>Welcome to my portfolio for ICT Advanced Media Design</b></p>				
-                    <p>On this portfolio you'll find all of the work I've done during the semester.</p>
-                    </article>
-                    <p>--Work--</p>
+                        <center><p><h1>Projects</h1></p></center>			
+                        <center><p>During this semester I worked on three different projects. You can select one here.</p></center>
+                        </article>
+                        
 
-                        <div class="grid-container">
-                            <div class="grid-item">
-                                <img src="images/general/me.jpg" alt="Me and my group" align = "right">
-                            </div>
-                            <div class="grid-item" style="text-align: left;">
-                                <div class="aboutme">
-                                <p><b>About me</b></p>
-                                <p>Hallo lezer. Ik ben Robin Friesen, geboren op 2 december 1999 in het prachtige misdaadstadje genaamd Sittard. Ik vind Interaction Design (UEX), netwerken opzetten en het werken met mobiele apparaten het meest interessant. Mijn hoofdroute is Media Design, en het vorige semester heb ik Smart Mobile (iOS) gedaan als specialisatie. Ik heb mijn vorige semester zowel de hoofdroute als de specialisatie afgerond, en zit nu in semester 3 voor Media Design.</p>
-                                </div>
-                            </div>
-                          </div>
+                    <div class="flex-container">
+                        <div class="flex-item" href="/projects/joint-efforts/personas copy.html">
+                            <a href="projects.html"><img src="images/Portfolio.png" alt="DDW" style="width:400px;height:400px;"></a>
+                            <br><br>
+                            <p><h1>Samen aan Z</h1></p>
+                        </div>
+                        <div class="flex-item" href="/projects/joint-efforts/personas copy.html">
+                            <a href="projects.html"><img src="images/Portfolio.png" alt="DDW" style="width:400px;height:400px;"></a>
+                            <br><br>
+                            <p><h1>Personal Project</h1></p></div>
+                        <div class="flex-item" href="/projects.html">
+                            <a href="projects.html"><img src="images/ddw.jpg" alt="DDW" style="width:400px;height:400px;"></a>
+                            <br><br>
+                            <p><h1>Dutch Design Week</h1></p></div>
+                            
+                        </div>
 
                         </div> 
 				
@@ -75,4 +80,27 @@
             <p>&copy;2023 Robin Friesen. All rights reserved.</p>
         </footer>
     </body>
+
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 2;
+            
+        }
+
+        .flex-item {
+            flex: 0 0 30%; /* Flex property to distribute space evenly, with a maximum width of 30% */
+            max-width: 30%; /* Maximum width for each item */
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            z-index: 2;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+        }
+    </style>
+
 </html>

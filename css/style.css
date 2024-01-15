@@ -15,6 +15,12 @@ height: 864px;
 width: 100%;
 }
 
+headersmall{
+    max-height: 432px;
+    height: 432px;
+    width: 100%;
+    }
+
 .background-wrap{
 position: fixed;
 z-index: -1000;
@@ -24,6 +30,15 @@ top: 0;
 left: 0;
 }
 
+.background-wrap-small{
+    position: fixed;
+    z-index: -1000;
+    width: 100%;
+    height: 432px;
+    top: 0;
+    left: 0;
+    }
+
 #video-bg-elem{
 position: absolute;
 top: 0;
@@ -31,6 +46,14 @@ left: 0;
 min-width: 100%;
 min-height: 864;
 }
+
+#video-bg-elem-small{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 432;
+    }
 
 .content{
 position: absolute;
@@ -66,7 +89,7 @@ max-width: 40%;
 margin-left: auto;
 margin-right: auto;
 padding-top: 16px;
-font-family: Calibri, sans-serif;
+font-family: arial, sans-serif;
 font-size: 19px;
 padding-bottom: 16px;
 }
