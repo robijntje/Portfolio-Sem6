@@ -325,6 +325,7 @@ padding: 10px;
 
 
 .grid-item {
+    flex: 0 0 30%;
 /* background-color: rgba(255, 255, 255, 0.8); */
 /* border: 1px solid rgba(0, 0, 0, 0.8); */
 padding: 20px;
@@ -358,7 +359,19 @@ font-size: 30px;
     box-sizing: border-box;
     text-align: center;
     z-index: 2;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
+    border-radius: 20px;
+    margin: 10px;
+    background-color: lightgray;
+}
+
+.flex-item-home {
+    flex: 0 0 50%; /* evenly split with max of 30% */
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 2;
     border-radius: 20px;
     margin: 10px;
 }
