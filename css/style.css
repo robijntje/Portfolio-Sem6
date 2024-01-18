@@ -258,6 +258,25 @@ background-color: #fff;
 color: #3a3a3a;
 }
 
+/* New menu */
+topmenu {
+    display: flex;
+    justify-content: center;
+}
+
+topmenu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+topmenu a:hover {
+    background-color: #777;
+}
+
 
 /* Footer CSS */
 
@@ -321,4 +340,25 @@ font-size: 30px;
     font-family: Calibri, sans-serif;
     font-size: 19px;
     padding-bottom: 16px;
+}
+
+/* New flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.flex-item {
+    flex: 0 0 30%; /* evenly split with max of 30% */
+    max-width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
 }
