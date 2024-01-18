@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- ©2017-2023 Robin Friesen. -->
+
+<html>
+    <head>
+        <title>SurveyJS Research | Portfolio Robin Friesen</title>
+        <link href="../../css/style.css" type="text/css" rel="stylesheet" />
+        <meta charset="UTF-8" />
+        <meta name="copyright" content="Robin Friesen" /> 
+        <meta name="description" content="Dit is het portfolio van Robin Friesen voor Advanced Media Design." />
+        <meta name="googlebot" content="noodp" />
+        <meta name="keywords" content="Robin Friesen Portfolio Media Design ICT Fontys" />
+        <link href="../../css/style.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="background-wrap-small">
+                <video id="video-bg-elem-small" preload="auto" autoplay="true" loop="loop" muted="muted">
+                    <source src="../../images/background-vid.mp4" type="video/mp4">
+                    <source src="../../image.jpg" type="img/jpg">
+                </video>
+            </div>
+
+            <div class="content">
+                <h1>Portfolio Advanced Media</h1>
+                <p>Robin Friesen</p>
+            </div>
+        </header>
+        <div id="menu">
+            <topmenu>
+                <a href="/index.html">Home</a>
+                <a href="/projects.html">Projects</a>
+                <a href="/outcomes.html">Learning Outcomes</a>
+            </topmenu>
+        </div>
+        <section style="padding-top: 30px; padding-bottom: 30px;">				
+				<article>
+                    <h1>SurveyJS Research</h1>
+                    <p>For the development of our mobile application, Tessa and Robin needed more information on SurveyJS: a library that makes it possible to create surveys. The SurveyJS library is already being used by the development team of the Samen aan Z project, and by using the same library we can make the integration of our app with their app easier. At the same time, we can make this a test to see how well the SurveyJS library works on mobile, as that hasn't been tested yet by the main development team.  
+                        </p>
+                        <h1>Library research</h1>
+                        <p>Before Tessa and Robin started working with SurveyJS, Robin already did some research on the library by going to their website and taking a look at their documentation (SurveyJS, n.d.). In their documentation they explain how to make a survey and how to integrate the survey into a website. 
+
+                            While looking at the documentation, I made the choice to add SurveyJS via JQuery. This is different from the main development team, as they use Angular for their application. I personally don't have any experience with Angular, and when I looked at the Angular documentation (Angular, n.d.) and came to the conclusion that it may be too complicated to switch our vanilla webapp to Angular. 
+                            </p>
+                        <h1>Trial and error</h1>
+                        <p>After this research Robin built her first survey using the survey creator on the SurveyJS website (SurveyJS, n.d.), so that she had some practical experience with the software. 
+                            </p>
+					<img src="/projects/joint-efforts/files/surveyjs/1.png" height=550px alt="SurveyJS example">
+                    <img src="/projects/joint-efforts/files/surveyjs/2.png" height=500px alt="SurveyJS example">
+                    <p>This survey would make sure that it couldn't be filled in twice by adding a cookie to the browser. </p>
+                    <img src="/projects/joint-efforts/files/surveyjs/3.png" height=200px alt="SurveyJS example">
+                    <p>After Tessa was informed of the information Robin had gathered, she went to also make a survey with SurveyJS. Here she quickly made a survey with keeping the actual surveys in mind. She then looked at all the different options available on SurveyJS and informed Robin that they had to make two different version. This way they could test most of the options that SurveyJS had and see which version the users liked the best. We made the two versions with different questions, so that we could have some valuable data to use as well. 
+
+                        These differences between the versions are: 
+                        </p>
+                    <ul>
+                        <li>All questions on one page (10 questions) vs 3 questions per page for a total of 4 pages (12 questions).</li>
+                        <li>Having the progress bar show the completed questions vs having the progress bar show the completed pages.</li>
+                        <li>Having the questions numbered vs having none of the questions numbered.</li>
+                        <li>Having numbers for the Likert scale vs having smileys for the Likert scale.</li>
+                        <li>Having the numbers be grey vs having the smileys have colours corresponding to how much you agree with a statement.</li>
+                    </ul>
+                    <p>Tessa also looked at the general settings that could be useful for our surveys. These were: </p>
+                    <ul>
+                        <li>Were the progress bar should be located and if it should be visible. </li>
+                        <li>Save partial survey results in progress. </li>
+                        <li>Where to go once the user presses the complete survey button. </li>
+                    </ul>
+                    <img src="/projects/joint-efforts/files/surveyjs/4.png" height=550px alt="SurveyJS example">
+                    <img src="/projects/joint-efforts/files/surveyjs/5.png" height=550px alt="SurveyJS example">
+                    <p>Once we wanted to implement the surveys we came to the conclusion that we needed to use an additional library. We used JQuerry for this, since this would be the easiest to implement in our current application (see Library research). </p>
+                    <h1>Mobile bug</h1>
+                    <p>When we tested the survey on Robin's phone, we noticed that the icons, the smileys and round numbers, disappeared. Tessa then googled ‘surveyjs mobile’. Here she found an update articles about what SurveyJS has been updating, one part was enhanced support for mobile devices. The update page said: “Responsive design: SurveyJS forms are responsive. This means they dynamically resize, rearrange, and adjust their layout to fit different screen sizes. For example, a radio button group turns into a dropdown menu if all choice options do not fit in a single row” (SurveyJS, 2023). This sadly meant that we couldn't fix it before the tests. We did however inform Steven (part of the development team of Samen aan Z) of this bug and he said that he would look into it once he starts the coding of the application after we're done with the project. </p>
+                    <img src="/projects/joint-efforts/files/surveyjs/6.png" height=550px alt="SurveyJS mobile">
+                    <img src="/projects/joint-efforts/files/surveyjs/7.png" height=550px alt="SurveyJS desktop">
+                    <img src="/projects/joint-efforts/files/surveyjs/8.png" height=550px alt="SurveyJS desktop">
+                        <h1>Conclusion</h1>
+                        <p>After researching and working with SurveyJS, we now understand how it works and how we can implement it in our mobile (and desktop) application. We know how to build a survey, the different settings we can adjust, and the different designs we can use for the likert scale. We also have implemented these surveys in our prototype so that we can test them with users. We will inform the main development team about the bug that exists in viewing the smileys and the numbers on mobile and will make this a point in our advice document. 
+                            </p>
+                            <h1>Learning outcomes</h1>
+                            <p>This deliverable is evidence for the following learning outcomes:</p>
+                            <h1>Learning outcome 3: Software design and realisation </h1>
+                                <p>You create & design software with existing components or libraries using predetermined quality criteria and version control. 
+                                    </p>
+				</article>
+        </section>
+        <footer>
+            <p>&copy;2023 Robin Friesen. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
